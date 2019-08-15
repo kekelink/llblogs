@@ -1,3 +1,18 @@
-.next
-#
-node_modules/
+# npm
+package-lock.json
+node_modules
+
+# vscode
+.vscode
+
+# vuepress 
+dist
+
+# 撰写中
+todo
+
+# 剑指offer刷题笔记
+剑指offer刷题笔记/index.js
+
+# 前端知识体系
+前端知识体系/js/index.js

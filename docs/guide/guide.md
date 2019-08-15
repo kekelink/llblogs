@@ -3,6 +3,8 @@ title: "导航"
 permalink: "guide"
 comment: true
 single: true
+sidebar: false 
+# 不需要侧边栏
 ---
 
 > 最近更新了下面这些文章 👇
