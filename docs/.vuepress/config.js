@@ -17,6 +17,7 @@ module.exports = {
   themeConfig: {
     lastUpdated: '最后更新', 
     repo: 'liulang2/llblogs',
+    editLinks: true,
     nav: [
       { text: '最近动态', link: '/' },
       { text: '大前端', link: '/guide/' },
