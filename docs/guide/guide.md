@@ -16,7 +16,7 @@ sidebar: false
     :key="index"
     href="post"
   >
-    <a :href="'llblogs'+ post.regularPath">《{{post.title}}》</a>
+    <a :href="'/llblogs'+ post.regularPath">《{{post.title}}》</a>
     <span>{{ post.formatDay }}</span>
   </li>
 </ul>
@@ -42,6 +42,7 @@ export default {
   mounted() {
     this.posts = this.$site.pages
     this.num = this.posts.length
+
   },
 
   computed: {
