@@ -70,3 +70,4 @@ module.exports = {
     'vuepress-plugin-cat'
   ]
 }
+

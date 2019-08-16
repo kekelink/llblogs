@@ -1,9 +1,9 @@
 ---
-title: "导航"
-permalink: "guide"
+title: '导航'
+permalink: 'guide'
 comment: true
 single: true
-sidebar: false 
+sidebar: false
 # 不需要侧边栏
 ---
 
@@ -16,7 +16,7 @@ sidebar: false
     :key="index"
     href="post"
   >
-    <a :href="post.regularPath">《{{post.title}}》</a>
+    <a :href="'llblogs'+post.regularPath">《{{post.title}}》</a>
     <span>{{ post.formatDay }}</span>
   </li>
 </ul>
@@ -66,6 +66,7 @@ export default {
         })
         .sort((a, b) => b.updateTimestamp - a.updateTimestamp)
         .slice(0, num)
+        console.log(post);
     },
     
     formatDate(date) {

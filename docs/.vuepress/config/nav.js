@@ -7,7 +7,7 @@ module.exports=  [
 
   {
     text: '每天一记',
-    items: [{ text: '每周分享', link: '/每日一记/' }]
+    items: [{ text: '每周分享', link: '/每日一记/' }],
   },
   { text: '了解更多', link: '/' }
 ]
