@@ -21,26 +21,7 @@ module.exports = {
     repo: 'liulang2/llblogs',
     editLinks: true,
     editLinkText: '编辑文档',
-    docsDir: 'docs', // 可以进行编辑
-    plugins: [
-      require('./plugins/my-router'),
-      require('./plugins/my-loader'),
-      require('vuepress-plugin-viewer'),
-      '@vuepress/back-to-top',
-      [ 
-        '@vuepress/google-analytics', { 'ga': 'UA-124601890-1' }
-      ],
-      [
-        '@vuepress/pwa',
-        {
-          serviceWorker: true,
-          updatePopup: {
-            message: "发现页面有新内容",
-            buttonText: "刷新"
-          }
-        }
-      ]
-    ],
+    docsDir: 'docs', // 可以进行编
     nav: [
       { text: '最近动态', link: '/' },
       { text: '大前端', link: '/' },
@@ -94,8 +75,8 @@ module.exports = {
           clientID: '680f2b9ce5df7a4b01b6',
           clientSecret: '903840adccfa4d33ad3ac18aa38ebf5e783669a9',
           repo: 'blog',
-          owner: 'dongyuanxin',
-          admin: ['dongyuanxin'],
+          owner: 'liulang2',
+          admin: ['liulang2'],
           id: '<%- frontmatter.commentid || frontmatter.permalink %>',      // Ensure uniqueness and length less than 50
           distractionFreeMode: false,  // Facebook-like distraction free mode
           labels: ['Gitalk', 'Comment'],
