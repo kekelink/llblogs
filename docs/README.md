@@ -9,7 +9,8 @@ footer: MIT Licensed | Copyright © 刘浪
 ---
 ## 🆕 研究中...
 
-- node.js
+- 后台系统  vue + node 
+- node爬虫
 
 ## ✏️ 算法修炼
 ...
@@ -17,12 +18,21 @@ footer: MIT Licensed | Copyright © 刘浪
 
 ## 🌐 前端方向
 ...
+
+...
+
 ## 🎨 UI 设计
 ...
 ## 🔧 工具
 ...
+
+...
+
 ## 💡 实验室
 ...
+
+...
+
 ## 📮 联系
 
 - **微信**: a364276421
