@@ -16,7 +16,7 @@ sidebar: false
     :key="index"
     href="post"
   >
-    <a :href="post.regularPath">《{{post.title}}》</a>
+    <a :href="'llblogs'+ post.regularPath">《{{post.title}}》</a>
     <span>{{ post.formatDay }}</span>
   </li>
 </ul>
