@@ -26,6 +26,7 @@
     "vuepress-plugin-viewer": "^1.0.0"
   },
   "dependencies": {
-    "gitalk": "^1.5.0"
+    "gitalk": "^1.5.0",
+    "vuepress-plugin-cat": "^1.0.3"
   }
 }
