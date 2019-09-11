@@ -1,6 +1,9 @@
 module.exports=  [
   { text: '最近动态', link: '/' },
-  { text: '大前端', link: '/' },
+  { text: '大前端', 
+  items: [{ text: 'http和缓存', link: '/http/' }]
+
+},
   { text: 'node', link: '/qqq/' },
   { text: 'UI设计', link: '/' },
   { text: '算法修炼', link: '/' },
