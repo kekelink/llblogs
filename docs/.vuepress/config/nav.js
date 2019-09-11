@@ -1,7 +1,7 @@
 module.exports=  [
   { text: '最近动态', link: '/' },
   { text: '大前端', 
-  items: [{ text: 'http和缓存', link: '/http/' }]
+  items: [{ text: 'http和缓存', link: '/大前端/' }]
 
 },
   { text: 'node', link: '/qqq/' },

@@ -7,7 +7,7 @@ module.exports= {
   ],
   '/大前端/':[
     '',
-    'http/http和缓存',
+    'http/http',
     
   ]
 }
