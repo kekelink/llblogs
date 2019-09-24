@@ -29,7 +29,7 @@ footer: MIT Licensed | Copyright © 刘浪
 [宝塔面板](https://liulang2.github.io/llblogs/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AE%B0/%E5%AD%A6%E4%B9%A0/%E5%AE%9D%E5%A1%94%E9%85%8D%E7%BD%AE.html)
 
 ## 💡 实验室
-...
+[vue+node后台](https://github.com/liulang2/vue-node)
 
 ...
 
