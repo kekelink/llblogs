@@ -2,7 +2,7 @@ const sidebar = require('./config/sidebar')
 const nav = require('./config/nav')
 
 module.exports = {
-  title: '流浪博客',
+  title: '技术刘',
   description: 'vue,node,前端,前端博客,VuePress',
   head: [
     ['link', { rel: 'icon', href: '/img/yue1.ico' }],

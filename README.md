@@ -5,7 +5,7 @@ actionText: 进入导航 →
 tagline: 快乐学技术
 actionLink: /guide/
 
-footer: MIT Licensed | Copyright © 刘浪
+footer: MIT Licensed | Copyright © 技术刘
 ---
 ## 🆕 研究中...
 
