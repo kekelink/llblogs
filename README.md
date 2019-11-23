@@ -9,8 +9,8 @@ footer: MIT Licensed | Copyright © 技术刘
 ---
 ## 🆕 研究中...
 
-- 后台系统  vue + node 
-- node爬虫
+- H5 后台管理 
+- node爬虫-新闻推送
 
 ## ✏️ 算法修炼
 ...
