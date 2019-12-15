@@ -4,7 +4,7 @@ module.exports = [
     text: '大前端',
     items: [
       { text: 'http和缓存', link: '/大前端/http/' },
-      { text: 'H5', link: '/大前端/H5/' }
+      { text: 'H5', link: '/大前端/H5/' },
       { text: 'VUE', link: '/大前端/vue/' }
     ]
   },
