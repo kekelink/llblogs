@@ -10,7 +10,10 @@ module.exports = [
   },
   { text: 'node', link: '/node/' },
   { text: 'UI设计', link: '/ui/' },
-  { text: '算法修炼', link: '/算法修炼/' },
+  { text: '算法修炼',
+    items: [{ text: '算法修炼', link: '/算法修炼/'}]
+
+  },
   {
     text: '每天一记',
     items: [{ text: '每周分享', link: '/每日一记/' }]

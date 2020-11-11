@@ -25,7 +25,8 @@ module.exports = {
     editLinkText: '编辑文档',
     docsDir: 'docs', // 可以进行编
     nav:nav,
-    
+    collapsable: true,
+
     sidebar:sidebar,
     sidebarDepth: 2,
     displayAllHeaders: true
