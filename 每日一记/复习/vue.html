@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue基础小知识 | 技术刘</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/llblogs/img/yue1.ico">
+    <link rel="manifest" href="/llblogs/manifest.json">
+    <meta name="description" content="vue,node,前端,前端博客,VuePress">
+    
+    <link rel="preload" href="/llblogs/assets/css/0.styles.430b9fab.css" as="style"><link rel="preload" href="/llblogs/assets/js/app.f8d87596.js" as="script"><link rel="preload" href="/llblogs/assets/js/2.47b02f67.js" as="script"><link rel="preload" href="/llblogs/assets/js/22.f3b87b9c.js" as="script"><link rel="preload" href="/llblogs/assets/js/4.60f449fe.js" as="script"><link rel="prefetch" href="/llblogs/assets/js/10.15b0c2f8.js"><link rel="prefetch" href="/llblogs/assets/js/11.878fad0a.js"><link rel="prefetch" href="/llblogs/assets/js/12.5a5a3c4e.js"><link rel="prefetch" href="/llblogs/assets/js/13.1dd985a4.js"><link rel="prefetch" href="/llblogs/assets/js/14.cf9aa131.js"><link rel="prefetch" href="/llblogs/assets/js/15.aa02178b.js"><link rel="prefetch" href="/llblogs/assets/js/16.4432dbf5.js"><link rel="prefetch" href="/llblogs/assets/js/17.edb8c025.js"><link rel="prefetch" href="/llblogs/assets/js/18.112e9689.js"><link rel="prefetch" href="/llblogs/assets/js/19.bfbce126.js"><link rel="prefetch" href="/llblogs/assets/js/20.9597431e.js"><link rel="prefetch" href="/llblogs/assets/js/21.28829582.js"><link rel="prefetch" href="/llblogs/assets/js/23.2bab1564.js"><link rel="prefetch" href="/llblogs/assets/js/24.98b953b2.js"><link rel="prefetch" href="/llblogs/assets/js/25.6ec4b8fd.js"><link rel="prefetch" href="/llblogs/assets/js/26.9d8ef471.js"><link rel="prefetch" href="/llblogs/assets/js/27.d0f32e08.js"><link rel="prefetch" href="/llblogs/assets/js/28.61e1694a.js"><link rel="prefetch" href="/llblogs/assets/js/29.07e36d10.js"><link rel="prefetch" href="/llblogs/assets/js/3.f92b3275.js"><link rel="prefetch" href="/llblogs/assets/js/30.b382e003.js"><link rel="prefetch" href="/llblogs/assets/js/31.b6962b3e.js"><link rel="prefetch" href="/llblogs/assets/js/32.49f363e9.js"><link rel="prefetch" href="/llblogs/assets/js/33.c1973620.js"><link rel="prefetch" href="/llblogs/assets/js/34.5bd93d7d.js"><link rel="prefetch" href="/llblogs/assets/js/35.56c9e32b.js"><link rel="prefetch" href="/llblogs/assets/js/36.5803445c.js"><link rel="prefetch" href="/llblogs/assets/js/37.8f90dc87.js"><link rel="prefetch" href="/llblogs/assets/js/38.3b55f15a.js"><link rel="prefetch" href="/llblogs/assets/js/39.1cfa798a.js"><link rel="prefetch" href="/llblogs/assets/js/40.86d6e67d.js"><link rel="prefetch" href="/llblogs/assets/js/41.ca7fbb96.js"><link rel="prefetch" href="/llblogs/assets/js/42.2b659992.js"><link rel="prefetch" href="/llblogs/assets/js/43.cc65acdc.js"><link rel="prefetch" href="/llblogs/assets/js/5.3a663e68.js"><link rel="prefetch" href="/llblogs/assets/js/6.1c4ff45f.js"><link rel="prefetch" href="/llblogs/assets/js/7.ecef6bb2.js"><link rel="prefetch" href="/llblogs/assets/js/8.d0fe07ef.js"><link rel="prefetch" href="/llblogs/assets/js/9.d6cf07b9.js">
+    <link rel="stylesheet" href="/llblogs/assets/css/0.styles.430b9fab.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/llblogs/" class="home-link router-link-active"><!----> <span class="site-name">技术刘</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/llblogs/" class="nav-link">
+  最近动态
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/llblogs/大前端/http/" class="nav-link">
+  http和缓存
+</a></li><li class="dropdown-item"><!----> <a href="/llblogs/大前端/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/llblogs/大前端/vue/" class="nav-link">
+  VUE
+</a></li></ul></div></div><div class="nav-item"><a href="/llblogs/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/llblogs/ui/" class="nav-link">
+  UI设计
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法修炼" class="dropdown-title"><span class="title">算法修炼</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法修炼" class="mobile-dropdown-title"><span class="title">算法修炼</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/llblogs/算法修炼/" class="nav-link">
+  算法修炼
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="每天一记" class="dropdown-title"><span class="title">每天一记</span> <span class="arrow down"></span></button> <button type="button" aria-label="每天一记" class="mobile-dropdown-title"><span class="title">每天一记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/llblogs/每日一记/" class="nav-link">
+  每周分享
+</a></li></ul></div></div> <a href="https://github.com/liulang2/llblogs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/llblogs/" class="nav-link">
+  最近动态
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/llblogs/大前端/http/" class="nav-link">
+  http和缓存
+</a></li><li class="dropdown-item"><!----> <a href="/llblogs/大前端/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/llblogs/大前端/vue/" class="nav-link">
+  VUE
+</a></li></ul></div></div><div class="nav-item"><a href="/llblogs/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/llblogs/ui/" class="nav-link">
+  UI设计
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法修炼" class="dropdown-title"><span class="title">算法修炼</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法修炼" class="mobile-dropdown-title"><span class="title">算法修炼</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/llblogs/算法修炼/" class="nav-link">
+  算法修炼
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="每天一记" class="dropdown-title"><span class="title">每天一记</span> <span class="arrow down"></span></button> <button type="button" aria-label="每天一记" class="mobile-dropdown-title"><span class="title">每天一记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/llblogs/每日一记/" class="nav-link">
+  每周分享
+</a></li></ul></div></div> <a href="https://github.com/liulang2/llblogs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/llblogs/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AE%B0/" aria-current="page" class="sidebar-link">每周分享</a></li><li><a href="/llblogs/每日一记/复习/vue.html" class="active sidebar-link">vue基础小知识</a></li><li><a href="/llblogs/每日一记/工作/git.html" class="sidebar-link">git遇到的问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/llblogs/每日一记/工作/git.html#ssh报错" class="sidebar-link">ssh报错</a></li></ul></li><li><a href="/llblogs/每日一记/学习/宝塔配置.html" class="sidebar-link">宝塔配置服务器</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="生命周期"><a href="#生命周期" class="header-anchor">#</a> 生命周期</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">beforeCreate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 这是我们遇到的第一个生命周期函数，表示实例完全被创建出来之前，会执行它</span>
+        <span class="token comment">// console.log(this.msg)</span>
+        <span class="token comment">// this.show()</span>
+        <span class="token comment">// 注意： 在 beforeCreate 生命周期函数执行的时候，data 和 methods 中的 数据都还没有没初始化</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 这是遇到的第二个生命周期函数</span>
+        <span class="token comment">// console.log(this.msg)</span>
+        <span class="token comment">// this.show()</span>
+        <span class="token comment">//  在 created 中，data 和 methods 都已经被初始化好了！</span>
+        <span class="token comment">// 如果要调用 methods 中的方法，或者操作 data 中的数据，最早，只能在 created 中操作</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">beforeMount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 这是遇到的第3个生命周期函数，表示 模板已经在内存中编辑完成了，但是尚未把 模板渲染到 页面中</span>
+        <span class="token comment">// console.log(document.getElementById('h3').innerText)</span>
+        <span class="token comment">// 在 beforeMount 执行的时候，页面中的元素，还没有被真正替换过来，只是之前写的一些模板字符串</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 这是遇到的第4个生命周期函数，表示，内存中的模板，已经真实的挂载到了页面中，用户已经可以看到渲染好的页面了</span>
+        <span class="token comment">// console.log(document.getElementById('h3').innerText)</span>
+        <span class="token comment">// 注意： mounted 是 实例创建期间的最后一个生命周期函数，当执行完 mounted 就表示，实例已经被完全创建好了，此时，如果没有其它操作的话，这个实例，就静静的 躺在我们的内存中，一动不动</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+
+      <span class="token comment">// 接下来的是运行中的两个事件</span>
+      <span class="token function">beforeUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 这时候，表示 我们的界面还没有被更新【数据被更新了吗？  数据肯定被更新了】</span>
+        <span class="token comment">/* console.log('界面上元素的内容：' + document.getElementById('h3').innerText)
+        console.log('data 中的 msg 数据是：' + this.msg) */</span>
+        <span class="token comment">// 得出结论： 当执行 beforeUpdate 的时候，页面中的显示的数据，还是旧的，此时 data 数据是最新的，页面尚未和 最新的数据保持同步</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">updated</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'界面上元素的内容：'</span> <span class="token operator">+</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'h3'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerText<span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'data 中的 msg 数据是：'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>msg<span class="token punctuation">)</span>
+        <span class="token comment">// updated 事件执行的时候，页面和 data 数据已经保持同步了，都是最新的</span>
+      <span class="token punctuation">}</span>
+</code></pre></div><h1 id="动画"><a href="#动画" class="header-anchor">#</a> 动画</h1> <ol><li>修改 v-前缀动画和类名动画</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* v-enter 【这是一个时间点】 是进入之前，元素的起始状态，此时还没有开始进入 */</span>
+    <span class="token comment">/* v-leave-to 【这是一个时间点】 是动画离开之后，离开的终止状态，此时，元素 动画已经结束了 */</span>
+    <span class="token punctuation">.</span>v<span class="token operator">-</span>enter<span class="token punctuation">,</span>
+    <span class="token punctuation">.</span>v<span class="token operator">-</span>leave<span class="token operator">-</span>to <span class="token punctuation">{</span>
+      opacity<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      transform<span class="token operator">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token number">150</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/* v-enter-active 【入场动画的时间段】 */</span>
+    <span class="token comment">/* v-leave-active 【离场动画的时间段】 */</span>
+    <span class="token punctuation">.</span>v<span class="token operator">-</span>enter<span class="token operator">-</span>active<span class="token punctuation">,</span>
+    <span class="token punctuation">.</span>v<span class="token operator">-</span>leave<span class="token operator">-</span>active<span class="token punctuation">{</span>
+      transition<span class="token operator">:</span> all <span class="token number">0.8</span>s ease<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+	<span class="token comment">/*my 代替v-  指定动画 */</span>
+	<span class="token punctuation">.</span>my<span class="token operator">-</span>enter<span class="token punctuation">,</span>
+    <span class="token punctuation">.</span>my<span class="token operator">-</span>leave<span class="token operator">-</span>to <span class="token punctuation">{</span>
+      opacity<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      transform<span class="token operator">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span><span class="token number">70</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token punctuation">.</span>my<span class="token operator">-</span>enter<span class="token operator">-</span>active<span class="token punctuation">,</span>
+    <span class="token punctuation">.</span>my<span class="token operator">-</span>leave<span class="token operator">-</span>active<span class="token punctuation">{</span>
+      transition<span class="token operator">:</span> all <span class="token number">0.8</span>s ease<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;app&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;button&quot;</span> value<span class="token operator">=</span><span class="token string">&quot;toggle&quot;</span> @click<span class="token operator">=</span><span class="token string">&quot;flag=!flag&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 需求： 点击按钮，让 h3 显示，再点击，让 h3 隐藏 <span class="token operator">--</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> <span class="token number">1.</span> 使用 transition 元素，把 需要被动画控制的元素，包裹起来 <span class="token operator">--</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> transition 元素，是 Vue 官方提供的 <span class="token operator">--</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>transition<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>h3 v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">&quot;flag&quot;</span><span class="token operator">&gt;</span>这是一个<span class="token constant">H3</span><span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>transition<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;button&quot;</span> value<span class="token operator">=</span><span class="token string">&quot;toggle2&quot;</span> @click<span class="token operator">=</span><span class="token string">&quot;flag2=!flag2&quot;</span><span class="token operator">&gt;</span>
+      <span class="token comment">//起一个名字  就可以吧v-代替</span>
+    <span class="token operator">&lt;</span>transition name<span class="token operator">=</span><span class="token string">&quot;my&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>h6 v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">&quot;flag2&quot;</span><span class="token operator">&gt;</span>这是一个<span class="token constant">H6</span><span class="token operator">&lt;</span><span class="token operator">/</span>h6<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>transition<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+    <span class="token comment">// 创建 Vue 实例，得到 ViewModel</span>
+    <span class="token keyword">var</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">{</span>
+        flag<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        flag2<span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      methods<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
+</code></pre></div><h1 id="vue的脚手架工具"><a href="#vue的脚手架工具" class="header-anchor">#</a> vue的脚手架工具</h1> <blockquote><p>vetur</p></blockquote> <ol><li><code>npm install -g vue-cli</code>安装全局的vue-cli</li> <li><code>vue init webpack 项目名字</code> 使用脚手架初始化一个webpack的vue项目</li> <li><code>npm run dev</code>项目根目录运行此命令，然后就可以在浏览器上<code>localhost:8080</code></li> <li>配置项目中·<code>.sass/.scss</code> <ul><li><code>cnpm i node-sass sass-loader -D</code>不需要任何的配置</li> <li><code>项目目录/config/index.js</code>中有一个dev的配置对象<code>autoOpenBrowser: true</code>自动在浏览器中打开</li></ul></li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/liulang2/llblogs/edit/master/docs/每日一记/复习/vue.md" target="_blank" rel="noopener noreferrer">编辑文档</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">2019-8-16 8:32:07 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/llblogs/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AE%B0/" class="prev router-link-active">
+        每周分享
+      </a></span> <span class="next"><a href="/llblogs/每日一记/工作/git.html">
+        git遇到的问题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div class="my-loader center" style="display:none;" data-v-16b71b14><div class="my-loader-circle" data-v-16b71b14></div></div><div class="my-popup" style="display:none;" data-v-5f98aac3><div class="my-popup-container" data-v-5f98aac3><div class="my-popup-exit" data-v-5f98aac3></div> <img src="" alt data-v-5f98aac3></div></div><!----><!----><div></div><div class="cat-container" data-v-a13867c0><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-a13867c0></canvas></div></div></div>
+    <script src="/llblogs/assets/js/app.f8d87596.js" defer></script><script src="/llblogs/assets/js/2.47b02f67.js" defer></script><script src="/llblogs/assets/js/22.f3b87b9c.js" defer></script><script src="/llblogs/assets/js/4.60f449fe.js" defer></script>
+  </body>
+</html>
